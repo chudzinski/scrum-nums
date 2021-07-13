@@ -1,0 +1,107 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+	<link rel="apple-touch-startup-image" href="images/startup?1.png">
+	<link rel="apple-touch-icon" href="images/icon-s.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/icon-m.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/icon-l.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/icon-xl.png">
+
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/scrum-nums.css">
+
+	<script src="scripts/zepto.min.js"></script>
+	<script src="scripts/fastclick.js"></script>
+	<script src="scripts/themes.js"></script>
+	<script src="scripts/zoom.js"></script>
+	<script src="scripts/slide.js"></script>
+	<script src="scripts/app.js"></script>
+
+	<title>Scrum Nums</title>
+</head>
+<body>
+	<div class="blank-start"></div>
+	<div class="settings" id="settings">
+		<div class="settings-top">
+			<span class="next link-blue"><span class="back-text">Done</span><i class="arrow fa fa-angle-right"></i></span>
+		</div>
+		<div class="heading">Theme</div>
+		<div class="themes">
+			<div class="theme-link" colorName="deep-navy">
+				<div class="color-box"><i class="fa fa-check"></i></div>Deep Navy
+			</div>
+			<div class="theme-link" colorName="ivory">
+				<div class="color-box"><i class="fa fa-check"></i></div>Ivory
+			</div>
+			<div class="theme-link" colorName="citrus-sinensis">
+				<div class="color-box"><i class="fa fa-check"></i></div>Citrus Sinensis
+			</div>
+			<div class="theme-link" colorName="purple-not-pink">
+				<div class="color-box"><i class="fa fa-check"></i></div>Purple Not Pink
+			</div>
+			<div class="theme-link" colorName="laser">
+				<div class="color-box"><i class="fa fa-check"></i></div>Laser
+			</div>
+			<div class="theme-link" colorName="clinical">
+				<div class="color-box"><i class="fa fa-check"></i></div>Clinical
+			</div>
+			<div class="theme-link" colorName="slate">
+				<div class="color-box"><i class="fa fa-check"></i></div>Slate
+			</div>
+			<div class="theme-link" colorName="voice-of-fire">
+				<div class="color-box"><i class="fa fa-check"></i></div>Voice of Fire
+			</div>
+		</div>
+		<div class="heading">About</div>
+		<p>Scrum Nums is a web app intended for use on smartphones during <span class="link-blue"><a href="http://en.wikipedia.org/wiki/Planning_poker">Scurm poker</a></span>.</p>
+		<p>This app makes use of:</p>
+		<ul>
+			<li>The Mozilla provided <span class="link-blue"><a href="https://github.com/mozilla/Fira">Fira Sans</a></span> typeface, designed by Erik Spiekermann. <span class="link-blue"><a href="https://github.com/mozilla/Fira/blob/master/LICENSE">License</a></span></li>
+			<li>Icons from <span class="link-blue"><a href="http://fontawesome.io">Font Awesome</a></span>, by Dave Gandy. <span class="link-blue"><a href="http://fontawesome.io/license">License</a></span></li>
+			<li>The JavaScript library <span class="link-blue"><a href="https://github.com/ftlabs/fastclick">Fastclick</a></span>, developed by FT Labs. <span class="link-blue"><a href="https://github.com/ftlabs/fastclick/blob/master/LICENSE">License</a></span></li>
+			<li>The JavaScript library with a jQuery-compatible API <span class="link-blue"><a href="http://zeptojs.com">Zepto</a></span>. <span class="link-blue"><a href="https://github.com/madrobby/zepto/blob/master/MIT-LICENSE">License</a></span></li>
+		</ul>
+		<p>Created by <span class="link-blue"><a href="http://chudzinski.ca">Adam Chudzinski</a></span></p>
+	</div>
+	<div class="slide-frame" id="slide-frame">
+		<div class="shadow slide-opacity-1"></div>
+		<div class="left-blank"></div>
+		<div class="middle-blank"></div>
+		<div class="right-blank"></div>
+		<div class="page-1 zoom-frame">
+			<div class="nav-top slide-opacity-1">
+				<div class="left"><i class="prev fa fa-cog gear"></i><div class="prev small-blank"></div></div>
+				<div class="right"><div class="next small-blank"></div><i class="next fa fa-angle-right"></i></div>
+			</div>
+			<div class="num-list">
+				<div class="num-circle"><div class="num">0</div></div>
+				<div class="num-circle"><div class="num">½</div></div>
+				<div class="num-circle"><div class="num">1</div></div><br>
+				<div class="num-circle"><div class="num">2</div></div>
+				<div class="num-circle"><div class="num">3</div></div>
+				<div class="num-circle"><div class="num">5</div></div><br>
+				<div class="num-circle"><div class="num">8</div></div>
+				<div class="num-circle"><div class="num">13</div></div>
+				<div class="num-circle"><div class="num">20</div></div>
+			</div>
+		</div>
+		<div class="page-2 zoom-frame">
+			<div class="nav-top slide-opacity-2">
+				<div class="left"><i class="prev fa fa-angle-left"></i><div class="prev small-blank"></div></div>
+				<div class="right"></div>
+			</div>
+			<div class="num-list">
+				<div class="num-circle"><div class="num">40</div></div>
+				<div class="num-circle"><div class="num small-num">100</div></div>
+				<div class="num-circle"><div class="num">∞</div></div><br>
+				<div class="num-circle"><div class="num">?</div></div>
+				<div class="num-circle"><div class="num small-num"><i class="fa fa-coffee"></i></div></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html> 
